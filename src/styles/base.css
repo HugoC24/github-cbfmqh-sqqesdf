@@ -6,9 +6,10 @@
   --color5: #fac19a;
   --color6: #bbb6df;
   --fg-dark: #ffffff;
-  --font1: 'Fira Sans Condensed', sans-serif;
-  --font2: 'Special Elite', cursive;
+  --font1: 'karma';
+  --font2: 'karma', cursive;
 }
+
 *,
 body {
   margin: 0;
@@ -126,19 +127,36 @@ img.logo:hover {
 .list-of-activities {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap:1em;
- 
+  gap: 1em;
 }
 .activities-preview {
- border: 1px solid #888;
- padding: 0.5em;
+  border: 1px solid #888;
+  padding: 0.5em;
 }
-.Activities-picture {
-  width: 150px;
-  height: 150px;
+.activities-preview .activities-picture {
+  width: 100%;
+  height: 100px;
   background-color: grey;
 }
-.description {
+.activities-preview .description {
   display: block;
-  min-height: 1em;
+  min-height: 0.4em;
+  font-size: 1em;
+  padding-top: 0.5em;
+}
+
+.activities-detail {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 1em;
+}
+.activities-detail .activities-picture {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
+.activities-detail .description {
+  display: block;
+  font-size: 1em;
+  padding-top: 0.5em;
 }
